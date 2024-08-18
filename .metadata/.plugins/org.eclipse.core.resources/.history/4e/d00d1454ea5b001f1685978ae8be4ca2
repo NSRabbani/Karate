@@ -1,0 +1,7 @@
+Feature: get jira user details with basic auth
+
+Scenario: Jira basic auth
+Given url 'https://trecking.atlassian.net/rest/api/3/user?accountId=61e1b2a6326554006c8c2d8a'
+When header Authorization = call read('basic-auth.js') { username: 'rabbanisherif@gmail.com', password: '61e1b2a6326554006c8c2d8a' }
+Then method get
+And status 200

@@ -1,0 +1,9 @@
+function fn() {   
+var config = { // base config JSON
+    appId: 'my.app.id',
+    appSecret: 'my.secret',
+    someUrlBase: 'https://some-host.com/v1/auth/',
+    anotherUrlBase: 'https://another-host.com/v1/'
+  };
+   return config;
+}
